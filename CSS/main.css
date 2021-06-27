@@ -4,3 +4,28 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+
+.head-content img{
+    width: 25em;
+}
+
+.head-content h1{
+    color: #303030;
+}
+
+.head-content{
+    display: flex;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
