@@ -1,0 +1,6 @@
+/*prevents weird/annoying padding a margins on the page and helps me layout*/
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
