@@ -1,31 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Palanquin&family=Space+Mono:wght@700&display=swap');
+
 /*prevents weird/annoying padding a margins on the page and helps me layout*/
 body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: #8b4987;
+}
+
+p{
+    font-family: 'Palanquin', sans-serif;
+}
+
+html{
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+a{
+    font-family: 'Space Mono', monospace;
+}
+
+header{
+    overflow: hidden;
+    background-color: #eb68b6;
 }
 
 .head-content img{
-    width: 25em;
+    width: 20em;
+    float: left;
 }
 
-.head-content h1{
+
+.navbar{
+    overflow: hidden;
+}
+
+.navbar h1{
     color: #303030;
+    margin: 0;
+    padding-left: 2.5em;
+    font-family: 'Bebas Neue', cursive;
 }
 
-.head-content{
+.navbar a{
+    text-decoration: none;
+    color: #2c2b57;
+    padding-left: 10.5%;
+    padding-right: 10.5%;
+}
+
+.row1 {
+    padding-top: 1em;
     display: flex;
+    width: 70%;
+    margin-right: auto;
+    margin-left:auto;
+  }
+  
+.column1 {
+    flex: 20%;
+    padding: 5px;
+    background-color: #cd6c99;
+  }
+
+.column1 img{
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.main-content{
+    display: block;
+    text-align: center;
+    background-color: #fe9bd2;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Create three equal columns that floats next to each other */
 .column {
     float: left;
     width: 33.33%;
-  }
+    background-color: #3e376a;
+    height: 10em;
+}
+
+.contact-us,
+.socials,
+.about{
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+footer{
+    bottom: 0;
+}
+
+footer h3{
+    color: #ffc3f0;
+    text-align: center;
+}
+
+footer p{
+    color: #c283b8;
+    text-align: center;
+}
+
+footer a{
+    text-align: center;
+    display: block;
+    text-decoration: underline solid;
+    color: #ffb7e5;
+}
+
+footer img{
+    display: block;
+    padding-bottom: .5em;
+    margin-left: auto;
+    margin-right: auto;
+}
   
   /* Clear floats after the columns */
   .row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}

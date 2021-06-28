@@ -10,7 +10,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="C:\Users\henry\OneDrive\12DGT\Website\ASSETS\COSMICPNG.png">
     <link rel="stylesheet" href="C:\Users\henry\OneDrive\12DGT\Website\CSS\main.css">
     <script src="C:\Users\henry\OneDrive\12DGT\Website\JAVASCRIPT\contact.js"></script>
-    <script src="C:\Users\henry\OneDrive\12DGT\Website\JAVASCRIPT\comment.js"></script>
 </head>
 <body>
 
@@ -32,49 +31,35 @@
     </div>
 </header>
 
-<div class="row1">
-    <div class="column1">
-        <div class="rules">
-            <a href="C:\Users\henry\OneDrive\12DGT\Website\HTML\rules.html"><img src="C:\Users\henry\OneDrive\12DGT\Website\ASSETS\rules.png" style="width: 15em;" alt="Rules page link image"></a>
-            <h2>Rules</h2>
-        </div>
-    </div>
-    <div class="column1">
-        <div class="shop">
-            <a href="https://cosmicmc.tebex.io/"><img src="C:\Users\henry\OneDrive\12DGT\Website\ASSETS\shopping.jpg" style="width: 14em;" alt="Shoping page link image"></a>
-            <h2>Shop</h2>
-        </div>
-    </div>
-    <div class="column1">
-        <div class="vote">
-            <a href="C:\Users\henry\OneDrive\12DGT\Website\HTML\voting.html"><img src="C:\Users\henry\OneDrive\12DGT\Website\ASSETS\vote.png" style="width: 13em;" alt="Voting page link image"></a>
-            <h2>Vote</h2>
-        </div>
-    </div>
-</div>
-
 <div class="main-content">
-<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
-<link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-<script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24btzxtgtD47CrVkVRaKY25%2F"+"&opts=16862&num=10&ts=1624881130060");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-</head>
-<body>
+    <h2>Contact us!</h2>
+    <form onsubmit="return false">
 
-
-
-
-<input type="button" value="Comment" onclick="popup('comment_box')"><br />
-
-<div class="comment_box">
-<form action="mailto:myemail@domain.com" method="post">
-<p>Comments and suggestions:<br><textarea name="comments" rows="3" cols="30"></textarea><br><br>
-<input type="submit" value="Send"></p>
-</form>
-
-</div> <!-- end of comment_box-->
-
-</body>
-</html>
+    <input type="text" placeholder="Enter your name (first and last)" id="Name" />
+    <br><br>
+    <label><input type="radio" id="human" name="gender" value="human">Human</label><br>
+    <label><input type="radio" id="frog" name="gender" value="frog">Frog</label><br>
+    <br><br>
+    <input type="email" placeholder="Enter your email" id="email" />
+    <br><br>
+    <input type="text" placeholder="Address" id="address" />
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" placeholder="House number" id="housenumber" />
+     &nbsp;&nbsp;&nbsp; 
+    <select id="country">
+    <option disabled selected value> -- select a country -- </option>
+    <option value="new zealand">New Zealand</option>
+    <option value="austrailia">Austrailia</option>
+    <option value="usa">USA</option>
+    <option value="uk">UK</option>
+    </select>
+    <br><br>
+    <span>What is your question?</span>
+    <br>
+    <textarea id="question" rows="4"></textarea>
+    <br><br>
+    <button onclick="sendContact();">Send</button>
+    </form>
 </div>
 
 <footer>
